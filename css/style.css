@@ -1,0 +1,745 @@
+/* dm-sans-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/dm-sans-v15-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* dm-sans-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/dm-sans-v15-latin-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* dm-sans-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/dm-sans-v15-latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+*,
+*::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  background-color: #191919;
+  line-height: 1.2;
+  font-weight: normal;
+  display: block;
+  max-width: 1440px;
+  margin: 0 auto;
+
+}
+
+/*Header styles start*/
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+
+}
+
+.header {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 119px;
+  background: #191919;
+  margin-bottom: 40;
+  z-index: 100;
+}
+
+.header_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  /*align-items: flex-end;*/
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 26;
+  background: #191919;
+  height: 119px;
+
+
+}
+
+.header_list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.header_item {
+  margin-right: 40px;
+
+}
+
+.header_item:last-child {
+  margin-right: 0;
+}
+
+#Contact .header_link {
+  font-size: 18px;
+  line-height: 150%;
+
+}
+
+.header_link {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header_link:hover,
+.header_link:focus,
+.header_link:active {
+  opacity: 0.75;
+  color: #118da8;
+}
+
+/*Header styles end*/
+
+.main {
+  margin-top: 119px;
+
+  /* background-color: rgb(17, 0, 255);*/
+}
+
+
+
+
+/* ///////    First_section styles start //////////*/
+
+.first_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 913px;
+  /* background-color: cadetblue;*/
+
+}
+
+#Main_image {
+  border-radius: 12px;
+  width: 650px;
+  height: 873px;
+  flex: 1;
+}
+
+.first_image {
+  display: inline-block;
+  margin-top: 40px;
+
+
+}
+
+/* блок с текстом справа от основного фото*/
+.first_content {
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 126%;
+  letter-spacing: 0.05em;
+  /* display: inline-block;*/
+  width: 530px;
+  height: 610px;
+  margin-left: 60px;
+  margin-top: 52px;
+  display: block;
+  /*flex-direction: column;*/
+  justify-content: center;
+  /*background-color: rgb(91, 107, 121);*/
+  position: relative;
+
+
+}
+
+.first_content_text1 {
+  margin-top: 163px;
+  color: #fff;
+  /* background-color: aquamarine;*/
+}
+
+.p_section1 {
+  padding-top: 0px;
+  /* color: rgb(255, 230, 0);*/
+  margin: 0px;
+  color: #fff;
+}
+
+#Div1 {
+  display: flex;
+  position: relative;
+  margin: 0;
+  height: 88px;
+  /* background-color: #191919;*/
+}
+
+#Next {
+  font-size: 75px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin: 0;
+
+}
+
+#Level {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 110%;
+  letter-spacing: 0.04em;
+  /* color: red;*/
+  color: #fff;
+  margin-left: 25px;
+  margin-top: 0;
+
+}
+
+.blue_line {
+  /* position: relative;
+  top: -176px;
+  /* Располагаем изображение вверху */
+  /* left: 0;
+  /* Располагаем изображение в левом углу */
+  /*z-index: 1;*/
+  position: absolute;
+  bottom: 168px;
+
+}
+
+.listen_on {
+  width: 289px;
+  height: 72px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #fff;
+  margin-top: 90px;
+}
+
+.listen_on img:first-of-type {
+  margin-left: 22px;
+}
+
+#listen_to {
+  margin-left: 22px;
+  margin-bottom: 16px;
+}
+
+.listen_to_logo {
+  margin-right: 17px;
+}
+
+.listen_on img:last-of-type {
+  margin-right: 0;
+}
+
+
+/* ///////    First_section styles ended //////////*/
+
+
+/* ///////    Second_section styles start //////////*/
+
+
+.second_section {
+  width: 1440px;
+  /*  background-color: aqua;*/
+  display: flex;
+  flex-direction: column;
+  height: 2088px;
+}
+
+.latest_episodes,
+.episodes {
+  display: block;
+  margin-left: 70px;
+}
+
+.latest_episodes {
+
+  margin-bottom: 40px;
+  /* Расстояние между блоками */
+  width: 1300px;
+  height: 99px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 70px;
+
+}
+
+.episodes {
+  /* margin-top: 20px;  Расстояние между блоками */
+  width: 1300px;
+  height: 545px;
+  margin-left: 70px;
+  margin-bottom: 60px;
+  /*background-color: #a39393;*/
+
+}
+
+#latest_episodes_text {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 124%;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin-top: 15px;
+
+}
+
+.button {
+  width: 178px;
+  height: 51px;
+  border-radius: 6px;
+  background: #118da8;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  color: #fff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-decoration: none;
+  /* Убираем подчеркивание ссылок */
+  /* align-self: flex-end; /* Помещаем кнопку вправо */
+  text-align: center;
+  /* Выравнивание текста по центру */
+}
+
+.episode_nummer {
+  border-radius: 32px;
+  width: 1300px;
+  height: 545px;
+  background: #000;
+  display: flex;
+}
+
+.episode_image {
+  width: 389px;
+  height: 465px;
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 53px;
+
+}
+
+.episode3 {
+  /* background-color: #c43232;*/
+  width: 778px;
+  height: 465px;
+  margin-top: 40px;
+
+}
+
+
+.grey_btn {
+  display: block;
+  margin-top: 7.5px;
+  border-radius: 6px;
+  height: 27px;
+  background: #191919;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: none;
+
+}
+
+.nummer_of_episode {
+  display: block;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  color: #118da8;
+  margin-top: 44.48px;
+}
+
+.should {
+  display: block;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 110%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-top: 17.56px;
+  width: 701px;
+  height: 141px;
+}
+
+.episode3_text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 28px;
+}
+
+.button2 {
+  display: block;
+  background: #118DA8;
+  margin-top: 18px;
+  width: 208px;
+  height: 51px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+
+/* ///////    Second_section styles ended //////////*/
+
+
+/* ///////    Third_section styles start //////////*/
+
+.third_section {
+  width: 1440px;
+  /*  background-color: aqua;*/
+  display: flex;
+  flex-direction: column;
+  height: 1530px;
+
+}
+
+.jacob {
+  display: block;
+  /* background-color: blueviolet;*/
+  width: 1300px;
+  height: 743px;
+  margin-top: 100px;
+  margin-left: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.jacob_text {
+  display: block;
+  /*background-color: red;*/
+  width: 590px;
+  height: 448px;
+}
+
+.meet_your_host {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #118da8;
+  margin-top: 20px;
+}
+
+.jacob_paulaner_text {
+
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 122%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-bottom: 28px;
+}
+
+.simple_text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 33px;
+}
+
+
+
+.subscribe {
+  display: block;
+  display: flex;
+  background-color: #000;
+  border-radius: 32px;
+  width: 1300px;
+  height: 387px;
+  margin-top: 200px;
+  margin-left: 70px;
+}
+
+.subscribe_for_updates {
+
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 110%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-left: 60px;
+  width: 431px;
+  height: 159px;
+
+}
+
+.subscribe_form {
+  display: block;
+  width: 522px;
+  height: 252px;
+  margin-top: 60px;
+  margin-left: 227px;
+  color: #fff;
+}
+
+#name,
+#email {
+  border: 1px solid #191919;
+  border-radius: 6px;
+  width: 522px;
+  height: 82px;
+  background: #191919;
+  margin-bottom: 20px;
+}
+
+::placeholder {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: rgba(255, 255, 255, 0.7);
+  text-indent: 19px;
+  /* Отступ слева */
+  padding-top: 26px;
+}
+
+#submit {
+  border-radius: 6px;
+  width: 87px;
+  height: 48px;
+  background: #118da8;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 192%;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+}
+
+/* ///////    Third_section styles ended //////////*/
+
+
+/* ///////    Forth_section styles start //////////*/
+.forth_section {
+  width: 1440px;
+  height: 901px;
+/*  background-color: rgb(255, 238, 0);*/
+  display: flex;
+  flex-direction: column;
+}
+
+.parent_review_block {
+  width: 1300px;
+  height: 701px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);/* Три столбца */
+    grid-gap: 16px;/* Расстояние между блоками */
+  /*  background-color: pink;*/
+  margin-top: 100px;
+  margin-left: 70px;
+}
+
+.review {
+  background-color: #ccc;
+  border-radius: 32px;
+  width: 423px;
+  height: 321px;
+  background: #000;
+  border-radius: 32px;
+
+}
+
+.parent_review_block .review:nth-last-of-type(-n+3) {
+  /* Стили для трех последних div с классом .review в контейнере */
+  height: 364px;
+}
+
+
+.review img:first-child {
+  /* Стили только для первого изображения */
+
+  margin-top: 54px;
+  /* Отступ между первым изображением и остальными */
+  margin-left: 50px;
+}
+
+.review img {
+  margin-right: 5px;
+}
+
+.review div:first-of-type {
+  margin-left: 50px;
+  margin-top: 21px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  color: #fff;
+}
+
+.review div:nth-of-type(2) {
+  /* Стили для второго div в контейнере */
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 50px;
+  margin-top: 19px;
+}
+
+.parent_review_block .review:nth-of-type(5) div:nth-of-type(1) {
+  font-size: 35px;
+  line-height: 123%;
+
+}
+
+/* ///////    Forth_section styles ended //////////*/
+
+
+/* ///////    Footer styles start //////////*/
+
+.footer {
+  display: grid;
+  width: 1440px;
+  height: 438px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.footer_section {
+  width: 1300px;
+  height: 238px;
+  margin-left: 70px;
+  margin-top: 100px;
+  display: flex;
+}
+
+.column1 {
+  display: flex;
+  flex-direction: column;
+  display: block;
+ /* background-color: #454692;*/
+  width: 447px;
+  height: 222px;
+}
+
+#logo_footer {
+  width: 224px;
+  height: 46px;
+}
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+  display: block;
+ /* background-color: #8d3b3b;*/
+  width: 178px;
+  height: 222px;
+  margin-left: 16px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 159%;
+  color: #fff;
+}
+
+.column2 ul,
+.column3 ul {
+  padding: 0;
+  margin: 0;
+}
+
+.column2 ul li,
+.column3 ul li {
+  margin-bottom: 10px; /* Добавляем вертикальный отступ между элементами списка */
+ 
+}
+
+.column2 ul li:nth-of-type(4) {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.footer ul {
+  list-style-type: none; /* Убираем маркеры перед элементами списка */
+ }
+
+.links {
+  display: block;
+  width: 447px;
+  height: 27px;
+  margin-top: 20px;
+}
+.links img{
+  margin-right: 10px;
+}
+
+.column3 {
+  display: flex;
+  flex-direction: column;
+  display: block;
+/*  background-color: #dac9c9;*/
+  width: 178px;
+  height: 222px;
+  margin-left: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+}
+
+.column3 ul li:nth-of-type(1),
+.column3 ul li:nth-of-type(2),
+.column3 ul li:nth-of-type(6) { /* Стили для первого, второго и шестого элементов списка */
+  font-size: 17px;
+  line-height: 159%;
+ 
+}
+
+.column4 {
+  display: flex;
+  flex-direction: row;
+  display: block;
+ /* background-color: #dac9c9;*/
+  width: 447px;
+  height: 32px;
+  margin-left: 16px;
+  margin-left: 16px;
+}
+
+#listen_to {
+  margin-left: 22px;
+  margin-bottom: 16px;
+}
