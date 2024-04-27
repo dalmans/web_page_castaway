@@ -51,14 +51,12 @@ body {
   display: block;
   max-width: 1440px;
   margin: 0 auto;
-
 }
 
 /*Header styles start*/
 .wrapper {
   max-width: 1300px;
   margin: 0 auto;
-
 }
 
 .header {
@@ -82,8 +80,6 @@ body {
   padding-top: 26;
   background: #191919;
   height: 119px;
-
-
 }
 
 .header_list {
@@ -94,7 +90,6 @@ body {
 
 .header_item {
   margin-right: 40px;
-
 }
 
 .header_item:last-child {
@@ -104,7 +99,6 @@ body {
 #Contact .header_link {
   font-size: 18px;
   line-height: 150%;
-
 }
 
 .header_link {
@@ -126,8 +120,6 @@ body {
 
 .main {
   margin-top: 119px;
-
-  /* background-color: rgb(17, 0, 255);*/
 }
 
 
@@ -140,8 +132,6 @@ body {
   align-items: center;
   justify-content: center;
   height: 913px;
-  /* background-color: cadetblue;*/
-
 }
 
 #Main_image {
@@ -154,8 +144,6 @@ body {
 .first_image {
   display: inline-block;
   margin-top: 40px;
-
-
 }
 
 /* блок с текстом справа от основного фото*/
@@ -164,39 +152,38 @@ body {
   font-size: 70px;
   line-height: 126%;
   letter-spacing: 0.05em;
-  /* display: inline-block;*/
   width: 530px;
   height: 610px;
   margin-left: 60px;
   margin-top: 52px;
   display: block;
-  /*flex-direction: column;*/
   justify-content: center;
   /*background-color: rgb(91, 107, 121);*/
   position: relative;
-
-
 }
 
 .first_content_text1 {
   margin-top: 163px;
   color: #fff;
+  width: 610px;
+  height: 530px;
   /* background-color: aquamarine;*/
 }
 
 .p_section1 {
   padding-top: 0px;
-  /* color: rgb(255, 230, 0);*/
   margin: 0px;
   color: #fff;
 }
 
 #Div1 {
+  /*блок, содержащий Next и Level*/
   display: flex;
-  position: relative;
-  margin: 0;
+  position: absolute;
   height: 88px;
-  /* background-color: #191919;*/
+  margin-top: 0px;
+  top: 339px;
+  left: 0;
 }
 
 #Next {
@@ -205,6 +192,10 @@ body {
   letter-spacing: 0.04em;
   color: #fff;
   margin: 0;
+  position: relative;
+  bottom: 0;
+  /* Располагаем внизу относительно параграфа */
+  left: 0;
 
 }
 
@@ -213,7 +204,6 @@ body {
   font-size: 80px;
   line-height: 110%;
   letter-spacing: 0.04em;
-  /* color: red;*/
   color: #fff;
   margin-left: 25px;
   margin-top: 0;
@@ -221,15 +211,8 @@ body {
 }
 
 .blue_line {
-  /* position: relative;
-  top: -176px;
-  /* Располагаем изображение вверху */
-  /* left: 0;
-  /* Располагаем изображение в левом углу */
-  /*z-index: 1;*/
   position: absolute;
   bottom: 168px;
-
 }
 
 .listen_on {
@@ -239,7 +222,9 @@ body {
   font-size: 15px;
   line-height: 160%;
   color: #fff;
-  margin-top: 90px;
+  position: absolute;
+  top: 501px;
+  left: 0;
 }
 
 .listen_on img:first-of-type {
@@ -268,7 +253,6 @@ body {
 
 .second_section {
   width: 1440px;
-  /*  background-color: aqua;*/
   display: flex;
   flex-direction: column;
   height: 2088px;
@@ -281,7 +265,6 @@ body {
 }
 
 .latest_episodes {
-
   margin-bottom: 40px;
   /* Расстояние между блоками */
   width: 1300px;
@@ -296,7 +279,6 @@ body {
 }
 
 .episodes {
-  /* margin-top: 20px;  Расстояние между блоками */
   width: 1300px;
   height: 545px;
   margin-left: 70px;
@@ -328,9 +310,9 @@ body {
   padding-bottom: 12px;
   text-decoration: none;
   /* Убираем подчеркивание ссылок */
-  /* align-self: flex-end; /* Помещаем кнопку вправо */
   text-align: center;
   /* Выравнивание текста по центру */
+
 }
 
 .episode_nummer {
@@ -348,7 +330,6 @@ body {
   margin-top: 40px;
   margin-bottom: 40px;
   margin-right: 53px;
-
 }
 
 .episode3 {
@@ -358,7 +339,6 @@ body {
   margin-top: 40px;
 
 }
-
 
 .grey_btn {
   display: block;
@@ -430,7 +410,6 @@ body {
 
 .third_section {
   width: 1440px;
-  /*  background-color: aqua;*/
   display: flex;
   flex-direction: column;
   height: 1530px;
@@ -439,7 +418,6 @@ body {
 
 .jacob {
   display: block;
-  /* background-color: blueviolet;*/
   width: 1300px;
   height: 743px;
   margin-top: 100px;
@@ -482,7 +460,6 @@ body {
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 33px;
 }
-
 
 
 .subscribe {
@@ -557,7 +534,7 @@ body {
 .forth_section {
   width: 1440px;
   height: 901px;
-/*  background-color: rgb(255, 238, 0);*/
+  /*  background-color: rgb(255, 238, 0);*/
   display: flex;
   flex-direction: column;
 }
@@ -566,9 +543,10 @@ body {
   width: 1300px;
   height: 701px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);/* Три столбца */
-    grid-gap: 16px;/* Расстояние между блоками */
-  /*  background-color: pink;*/
+  grid-template-columns: repeat(3, 1fr);
+  /* Три столбца */
+  grid-gap: 16px;
+  /* Расстояние между блоками */
   margin-top: 100px;
   margin-left: 70px;
 }
@@ -591,7 +569,6 @@ body {
 
 .review img:first-child {
   /* Стили только для первого изображения */
-
   margin-top: 54px;
   /* Отступ между первым изображением и остальными */
   margin-left: 50px;
@@ -651,7 +628,7 @@ body {
   display: flex;
   flex-direction: column;
   display: block;
- /* background-color: #454692;*/
+  /* background-color: #454692;*/
   width: 447px;
   height: 222px;
 }
@@ -665,7 +642,7 @@ body {
   display: flex;
   flex-direction: column;
   display: block;
- /* background-color: #8d3b3b;*/
+  /* background-color: #8d3b3b;*/
   width: 178px;
   height: 222px;
   margin-left: 16px;
@@ -683,8 +660,9 @@ body {
 
 .column2 ul li,
 .column3 ul li {
-  margin-bottom: 10px; /* Добавляем вертикальный отступ между элементами списка */
- 
+  margin-bottom: 10px;
+  /* Добавляем вертикальный отступ между элементами списка */
+
 }
 
 .column2 ul li:nth-of-type(4) {
@@ -693,8 +671,9 @@ body {
 }
 
 .footer ul {
-  list-style-type: none; /* Убираем маркеры перед элементами списка */
- }
+  list-style-type: none;
+  /* Убираем маркеры перед элементами списка */
+}
 
 .links {
   display: block;
@@ -702,7 +681,8 @@ body {
   height: 27px;
   margin-top: 20px;
 }
-.links img{
+
+.links img {
   margin-right: 10px;
 }
 
@@ -710,7 +690,6 @@ body {
   display: flex;
   flex-direction: column;
   display: block;
-/*  background-color: #dac9c9;*/
   width: 178px;
   height: 222px;
   margin-left: 16px;
@@ -722,17 +701,16 @@ body {
 
 .column3 ul li:nth-of-type(1),
 .column3 ul li:nth-of-type(2),
-.column3 ul li:nth-of-type(6) { /* Стили для первого, второго и шестого элементов списка */
+.column3 ul li:nth-of-type(6) {
+  /* Стили для первого, второго и шестого элементов списка */
   font-size: 17px;
   line-height: 159%;
- 
 }
 
 .column4 {
   display: flex;
   flex-direction: row;
   display: block;
- /* background-color: #dac9c9;*/
   width: 447px;
   height: 32px;
   margin-left: 16px;
