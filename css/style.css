@@ -49,8 +49,10 @@ body {
   line-height: 1.2;
   font-weight: normal;
   display: block;
+  display: flex;
+  flex-direction: column;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 /*Header styles start*/
@@ -61,13 +63,13 @@ body {
 
 .header {
   background-color: black;
-  position: fixed;
+  /* position: fixed;*/
   top: 0;
   left: 0;
   width: 100%;
   height: 119px;
   background: #191919;
-  margin-bottom: 40;
+  /* margin-bottom: 40;*/
   z-index: 100;
 }
 
@@ -128,31 +130,48 @@ body {
 /*Header styles end*/
 
 .main {
-  margin-top: 119px;
+
+  /* margin-top: 119px;*/
+  display: block;
+
 }
-
-
-
 
 /* ///////    First_section styles start //////////*/
 
 .first_section {
   display: flex;
-  align-items: center;
+  /* align-items: center;*/
   justify-content: center;
-  height: 913px;
+  height: auto;
+  max-width: 1440px;
+  min-width: 100%;
+
 }
+
+.first_section_center {
+  display: flex;
+  align-items: center;
+  height: 913px;
+  max-width: 1300px;
+  min-width: 90%;
+}
+
+
+
 
 #Main_image {
   border-radius: 12px;
   width: 650px;
   height: 873px;
-  flex: 1;
+
+  /* flex: 1;*/
 }
 
 .first_image {
-  display: inline-block;
+  display: block;
   margin-top: 40px;
+
+
 }
 
 /* блок с текстом справа от основного фото*/
@@ -261,7 +280,7 @@ body {
 
 
 .second_section {
-  width: 1440px;
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   height: 2088px;
@@ -275,8 +294,8 @@ body {
 
 .latest_episodes {
   margin-bottom: 40px;
-  /* Расстояние между блоками */
   width: 1300px;
+  min-width: 90%;
   height: 99px;
   margin-top: 100px;
   display: flex;
@@ -288,7 +307,8 @@ body {
 }
 
 .episodes {
-  width: 1300px;
+ max-width: 1300px;
+ min-width: 90%;
   height: 545px;
   margin-left: 70px;
   margin-bottom: 60px;
@@ -326,7 +346,8 @@ body {
 
 .episode_nummer {
   border-radius: 32px;
-  width: 1300px;
+  max-width: 1300px;
+  min-width: 90%;
   height: 545px;
   background: #000;
   display: flex;
@@ -343,7 +364,8 @@ body {
 
 .episode3 {
   /* background-color: #c43232;*/
-  width: 778px;
+  max-width: 778px;
+  min-width: 90%;
   height: 465px;
   margin-top: 40px;
 
@@ -734,10 +756,11 @@ body {
 
 @media only screen and (max-width: 768px) {
 
-   .wrapper {
+  .wrapper {
     max-width: 90%;
   }
-  .header{
+
+  .header {
     height: auto;
   }
 
@@ -755,7 +778,7 @@ body {
     align-items: center;
   }
 
-   .header_list {
+  .header_list {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -766,8 +789,103 @@ body {
     margin-bottom: 20px;
   }
 
-  .main{
+  .body {
+    max-width: 90%;
+  }
+
+  .main {
+
+    display: flex;
+    display: block;
+
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .first_section {
+    height: auto;
+    max-width: 1440px;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .first_section_center {
+
+    max-width: 1300px;
+    height: auto;
+    display: block;
+    flex-direction: column;
+    /* justify-content: center;*/
+    align-items: center;
 
   }
+
+  .first_image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .first_content {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .second_section{
+    height: auto;
+  }
+  .latest_episodes {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.episodes{
+ display: block;
+  display: flex;
+  height: auto;
+  min-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+.episode_nummer{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: fit-content;
+}
+.episode_image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.episode3{
+  display: block;
+  width: fit-content;
+  height: auto;
+}
+.episode3 :only-child{
+  display: block;
+  width: fit-content;
+  height: auto;
+}
+
+.should, .episode3_text{
+  width: fit-content;
+  height: auto;
+}
 
 }
