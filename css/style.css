@@ -368,7 +368,8 @@ body {
   min-width: 90%;
   height: 465px;
   margin-top: 40px;
-
+  display: block;
+ 
 }
 
 .grey_btn {
@@ -388,7 +389,7 @@ body {
 }
 
 .nummer_of_episode {
-  display: block;
+ /* display: block;*/
   font-weight: 400;
   font-size: 17px;
   line-height: 159%;
@@ -414,6 +415,7 @@ body {
   line-height: 150%;
   color: rgba(255, 255, 255, 0.7);
   margin-top: 28px;
+  max-width: 773px;
 }
 
 .button2 {
@@ -440,7 +442,8 @@ body {
 /* ///////    Third_section styles start //////////*/
 
 .third_section {
-  width: 1440px;
+  max-width: 1440px;
+  min-width: 90%;
   display: flex;
   flex-direction: column;
   height: 1530px;
@@ -498,7 +501,8 @@ body {
   display: flex;
   background-color: #000;
   border-radius: 32px;
-  width: 1300px;
+  max-width: 1300px;
+  min-width: 90%;
   height: 387px;
   margin-top: 200px;
   margin-left: 70px;
@@ -563,7 +567,8 @@ body {
 
 /* ///////    Forth_section styles start //////////*/
 .forth_section {
-  width: 1440px;
+  max-width: 1440px;
+  min-width: 90%;
   height: 901px;
   /*  background-color: rgb(255, 238, 0);*/
   display: flex;
@@ -571,7 +576,8 @@ body {
 }
 
 .parent_review_block {
-  width: 1300px;
+  max-width: 1300px;
+  min-width: 90%;
   height: 701px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -837,10 +843,10 @@ body {
 
   }
 
-  .second_section{
+  .second_section, .third_section{
     height: auto;
   }
-  .latest_episodes {
+  .latest_episodes, .jacob {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -887,5 +893,46 @@ body {
   width: fit-content;
   height: auto;
 }
+.jacob_text{
+  margin-bottom: 40px;
+}
 
+
+.subscribe  {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+}
+
+.subscribe > div {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+ 
+}
+
+.forth_section{
+  height: auto;
+}
+
+.parent_review_block {
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);  /* один столбец*/
+  grid-gap: 16px;  /* Расстояние между блоками */
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+
+}
+.review{
+  margin-left: auto;
+  margin-right: auto;
+}
 }
